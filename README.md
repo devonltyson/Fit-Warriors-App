@@ -12,9 +12,9 @@
 * [Contact](#contact)
 
 ## General info
-<u>Developers:</u> Dakota Ruhl, Kenneth Omo, Jose Hernandez, Victor Hernandez, Devon Tyson
+The Fit Warriors application tracks your workouts and records the data as statistics for a virtual character. Select the skill you'd like to train and your character will gain experience as you workout. When you've gotten the required experience, you will gain a level in the specified skill. The higher the skill level, the more experience it takes to level which progressively increases the difficulty.
 
-<center>The purpose of this project is to create an application that tracks exercise data to level up a character. The intended audience is for people who would like to get fit in a fun way. We hope that this application impacts the well-being of our users by inspiring them to go to the gym. </center>
+Developers: Devon Tyson, Dakota Ruhl, Kenneth Omo, Jose Hernandez, and Victor Hernandez
 
 ## Technologies Used
 Andriod Studio <br>
