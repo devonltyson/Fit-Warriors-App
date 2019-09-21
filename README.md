@@ -29,22 +29,5 @@ Andriod Studio <br>
 <b>Biometrics:</b> <br>
   Built-in technology on your phone will track your workouts for you in real time.
 
-
-## Screenshots
-Screenshots
-
-## Setup
-How to install / setup your local environement / add link to demo version
-
-## Code Examples
-Usage:
-`put-your-code-here`
-
 ## Status
 Project is: In progress
-
-## Inspiration
-Credits here
-
-## Contact
-Contact info
