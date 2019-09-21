@@ -11,7 +11,7 @@ public class Player implements IFightable {
 	}
 	
 	private void calculateCombatLevel() {
-		int cb = (this.strength.getLevel()/3) + (this.hp.getLevel()/5);
+		int cb = (this.strength.getLevel()/3) + (this.hp.getLevel()/5) - 1;
 		if(!(cb < 1)) {
 			this.combatLevel = cb;
 		}

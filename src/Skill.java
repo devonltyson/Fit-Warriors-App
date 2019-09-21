@@ -40,8 +40,8 @@ public abstract class Skill implements ITrainable {
 	}
 	
 	private void calculateGoalXp() {
-		int addedXp = this.level*5000;
-		this.goalXp += addedXp;
+		int addedXp = this.level*1000;
+		this.goalXp = addedXp;
 	}
 	
 	@Override
