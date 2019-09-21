@@ -3,13 +3,13 @@ public class MainApp {
 
 	public static void main(String[] args) {
 		
+		// Create all database connections
 		// Create main UI instance
-		// database connection for biometrics
-		Manager manager = new Manager();
+		Controller manager = new Controller();
 		Player mainPlayer = new Player();
 		
 		
-		//testing
+		// testing
 		manager.viewStats(mainPlayer);
 		manager.trainingMode(mainPlayer);
 		manager.viewStats(mainPlayer);
