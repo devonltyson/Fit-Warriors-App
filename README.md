@@ -3,7 +3,7 @@
 
 ## Table of contents
 * [General info](#general-info)
-* [Technologies](#technologies)
+* [Technologies used](#technologies)
 * [Features](#features)
 * [Status](#status)
 
@@ -12,7 +12,7 @@ The Fit Warriors application tracks your workouts and records the data as statis
 
 Developers: Devon Tyson, Dakota Ruhl, Kenneth Omo, Jose Herrera, and Victor Hernandez
 
-## Technologies Used
+## Technologies used
 Andriod Studio <br>
 
 ## Features
