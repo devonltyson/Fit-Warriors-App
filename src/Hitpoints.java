@@ -4,10 +4,11 @@ public class Hitpoints extends Skill {
 	int level, xp, goalXp;
 
 	public Hitpoints() {
-		this.level = 10;
+		super.level = 10;
 		this.xp = super.xp;
 		this.goalXp = super.goalXp;	
 	}
+	
 	
 	@Override
 	public void train(int addedXp) {

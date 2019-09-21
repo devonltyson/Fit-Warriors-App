@@ -1,6 +1,6 @@
 
 public interface IFightable {
 	
-	public int attack();
+	public void attack();
 
 }

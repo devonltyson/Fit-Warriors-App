@@ -27,13 +27,13 @@ public class MainApp {
 		System.out.println("Strength: " + strengthLevel);
 		System.out.println("HitPoints: " + hpLevel);
 		System.out.println("Combat: " + combatLevel);
-		System.out.println();
 	}
 	
 	public static void trainingMode(Player player) {
 		
 		// training data
-		int addedXp = 50000;
+		int addedXp = 5000000;
+		System.out.println("\nTraining...\n");
 		
 		Skill skill = player.getStrengthSkill();
 		player.trainSkill(skill, addedXp);

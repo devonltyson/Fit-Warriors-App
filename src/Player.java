@@ -1,5 +1,5 @@
 
-public class Player {
+public class Player implements IFightable {
 	
 	private Skill strength, hp;
 	private int combatLevel;
@@ -10,7 +10,15 @@ public class Player {
 		this.combatLevel = 1;
 	}
 	
+	private void calculateCombatLevel() {
+		int cb = (this.strength.getLevel()/3) + (this.hp.getLevel()/5);
+		if(!(cb < 1)) {
+			this.combatLevel = cb;
+		}
+	}
+	
 	public int getCombatLevel() {
+		calculateCombatLevel();
 		return this.combatLevel;
 	}
 	
@@ -22,12 +30,12 @@ public class Player {
 		return this.hp;
 	}
 	
-	public void calculateCombatLevel() {
-		this.combatLevel = (this.strength.getLevel()/3) + (this.hp.getLevel()/5);
-	}
-	
 	public void trainSkill(Skill skill, int addedXp) {
 		skill.train(addedXp);
 	}
 
+	@Override
+	public void attack() {
+		// TODO Auto-generated method stub
+	}
 }
