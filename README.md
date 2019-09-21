@@ -5,11 +5,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Features](#features)
-* [Screenshots](#screenshots)
-* [Setup](#setup)
 * [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
 
 ## General info
 The Fit Warriors application tracks your workouts and records the data as statistics for a virtual character. Select the skill you'd like to train and your character will gain experience as you workout. When you've gotten the required experience, you will gain a level in the specified skill. The higher the skill level, the more experience it takes to level which progressively increases the difficulty.
@@ -30,4 +26,4 @@ Andriod Studio <br>
   Built-in technology on your phone will track your workouts for you in real time.
 
 ## Status
-Project is: In progress
+Project is in progress
