@@ -5,14 +5,18 @@ public class MainApp {
 		
 		// Create all database connections
 		// Create main UI instance
-		Controller manager = new Controller();
 		Player mainPlayer = new Player();
+		Controller manager = new Controller(mainPlayer);
 		
 		
 		// testing
-		manager.viewStats(mainPlayer);
-		manager.trainingMode(mainPlayer);
-		manager.viewStats(mainPlayer);
+		manager.viewStats();
+		
+		Skill skill = mainPlayer.getStrengthSkill();
+		int xp = 15000;
+		manager.trainingMode(skill, xp);
+		
+		manager.viewStats();
 	}
 
 }

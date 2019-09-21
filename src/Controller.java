@@ -1,7 +1,13 @@
 
 public class Controller {
+	
+	Player player;
+	
+	public Controller(Player player) {
+		this.player = player;
+	}
 
-	public void viewStats(Player player) {
+	public void viewStats() {
 		
 		Skill strength = player.getStrengthSkill();
 		Skill hp = player.getHitPointsSkill();
@@ -11,24 +17,21 @@ public class Controller {
 		int hpLevel = hp.getLevel();
 		
 		//testing stats viewer
+		System.out.println("-- Player Statistics --");
 		System.out.println("Combat Level: " + combatLevel);
 		System.out.println("Strength Level: " + strengthLevel);
 		System.out.println("Hitpoints Level: " + hpLevel);
+		System.out.println();
 	}
 	
-	public void trainingMode(Player player) {
-		
-		// training data
-		int addedXp = 910000;
-		System.out.println("\nTraining...\n");
-		
-		Skill skill = player.getStrengthSkill();
+	public void trainingMode(Skill skill, int addedXp) {
+
 		Skill hp = player.getHitPointsSkill();
 		player.trainSkill(skill, addedXp);
 		player.trainSkill(hp, addedXp);
 	}
 	
-	public void battleMode(Player player, Player other) {
+	public void battleMode(Player other) {
 		
 		// implemented later
 		
