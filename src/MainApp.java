@@ -9,25 +9,24 @@ public class MainApp {
 		// Create main UI instance
 		Player mainPlayer = new Player();
 		Controller manager = new Controller(mainPlayer);
-		
+		View viewer = new View(manager);
 		
 		//testing
-		showStats(manager);
+		viewer.showStats();
 		
 		Skill skill = mainPlayer.getStrengthSkill();
-		int xp = 105000;
+		int xp = 20000;
 		manager.trainingMode(skill, xp);
 		
-		showStats(manager);
+		viewer.showStats();
 	}
 	
-	public static void showStats(Controller manager) {
-		HashMap<String, Integer> stats = manager.playerStats();
+	public static void saveData() {
 		
-		for (Entry<String, Integer> entry : stats.entrySet())  
-            System.out.println(entry.getKey() + 
-                             ": " + entry.getValue());
-		System.out.println();
+	}
+	
+	public static void getData() {
+		
 	}
 
 }

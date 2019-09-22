@@ -38,12 +38,4 @@ public class Controller {
 		
 	}
 	
-	public void saveData() {
-		
-	}
-	
-	public void getData() {
-		
-	}
-	
 }
