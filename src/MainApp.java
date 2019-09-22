@@ -1,3 +1,5 @@
+import java.util.*;
+import java.util.Map.Entry;
 
 public class MainApp {
 
@@ -9,14 +11,23 @@ public class MainApp {
 		Controller manager = new Controller(mainPlayer);
 		
 		
-		// testing
-		manager.viewStats();
+		//testing
+		showStats(manager);
 		
 		Skill skill = mainPlayer.getStrengthSkill();
-		int xp = 15000;
+		int xp = 105000;
 		manager.trainingMode(skill, xp);
 		
-		manager.viewStats();
+		showStats(manager);
+	}
+	
+	public static void showStats(Controller manager) {
+		HashMap<String, Integer> stats = manager.playerStats();
+		
+		for (Entry<String, Integer> entry : stats.entrySet())  
+            System.out.println(entry.getKey() + 
+                             ": " + entry.getValue());
+		System.out.println();
 	}
 
 }

@@ -1,3 +1,4 @@
+import java.util.*;
 
 public class Controller {
 	
@@ -7,7 +8,7 @@ public class Controller {
 		this.player = player;
 	}
 
-	public void viewStats() {
+	public HashMap<String,Integer> playerStats() {
 		
 		Skill strength = player.getStrengthSkill();
 		Skill hp = player.getHitPointsSkill();
@@ -16,12 +17,12 @@ public class Controller {
 		int strengthLevel = strength.getLevel();
 		int hpLevel = hp.getLevel();
 		
-		//testing stats viewer
-		System.out.println("-- Player Statistics --");
-		System.out.println("Combat Level: " + combatLevel);
-		System.out.println("Strength Level: " + strengthLevel);
-		System.out.println("Hitpoints Level: " + hpLevel);
-		System.out.println();
+		HashMap<String, Integer> stats = new HashMap<String, Integer>();
+		stats.put("Combat", combatLevel);
+		stats.put("Stength", strengthLevel);
+		stats.put("HitPoints", hpLevel);
+		
+		return stats;
 	}
 	
 	public void trainingMode(Skill skill, int addedXp) {
@@ -34,6 +35,14 @@ public class Controller {
 	public void battleMode(Player other) {
 		
 		// implemented later
+		
+	}
+	
+	public void saveData() {
+		
+	}
+	
+	public void getData() {
 		
 	}
 	
