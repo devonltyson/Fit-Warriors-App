@@ -1,3 +1,7 @@
+/**
+ * 	@author Devon Tyson
+ */
+
 import java.io.*;
 
 public class MainApp {

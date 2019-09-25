@@ -1,15 +1,29 @@
+/**
+ * 	@author Devon Tyson
+ */
 
 public class Player implements IFightable {
 	
-	private Skill strength, hp;
+	private Skill strength, defence, hp;
 	private int combatLevel;
 	private String username;
 	
+	// constructor for new players
 	public Player(String name) {
 		this.username = name;
 		this.strength = new Strength();
+		this.defence = new Defence();
 		this.hp = new Hitpoints();
 		this.combatLevel = 1;
+	}
+	
+	// constructor for existing players
+	public Player(String name, Skill str, Skill def, Skill hp) {
+		this.username = name;
+		this.strength = str;
+		this.defence = def;
+		this.hp = hp;
+		calculateCombatLevel();
 	}
 	
 	private void calculateCombatLevel() {
@@ -30,6 +44,10 @@ public class Player implements IFightable {
 	
 	public Skill getStrengthSkill() {
 		return this.strength;
+	}
+	
+	public Skill getDefenceSkill() {
+		return this.defence;
 	}
 	
 	public Skill getHitPointsSkill() {

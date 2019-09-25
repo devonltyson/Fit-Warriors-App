@@ -1,3 +1,6 @@
+/**
+ * 	@author Devon Tyson
+ */
 
 public abstract class Skill implements ITrainable {
 	
@@ -5,11 +8,19 @@ public abstract class Skill implements ITrainable {
 	protected int level;
 	protected int xp;
 	protected int goalXp;
-	
+
+	// constructor for new players
 	public Skill() {
 		this.level = 1;
 		this.xp = 0;
-		this.goalXp = 5000;
+		this.goalXp = 2000;
+	}
+	
+	// constructor for existing players
+	public Skill(int level, int xp) {
+		this.level = level;
+		this.xp = xp;
+		calculateGoalXp();
 	}
 	
 	public int getLevel() {

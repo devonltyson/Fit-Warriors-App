@@ -1,3 +1,7 @@
+/**
+ * 	@author Devon Tyson
+ */
+
 import java.util.HashMap;
 import java.util.Map.Entry;
 

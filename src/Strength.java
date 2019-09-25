@@ -1,3 +1,6 @@
+/**
+ * 	@author Devon Tyson
+ */
 
 public class Strength extends Skill {
 	

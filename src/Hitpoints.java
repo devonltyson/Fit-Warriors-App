@@ -1,3 +1,7 @@
+/**
+ * 	@author Devon Tyson
+ */
+
 
 public class Hitpoints extends Skill {
 	

@@ -1,3 +1,6 @@
+/**
+ * 	@author Devon Tyson
+ */
 
 public interface ITrainable {
 
