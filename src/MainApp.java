@@ -1,5 +1,4 @@
-import java.util.*;
-import java.util.Map.Entry;
+import java.io.*;
 
 public class MainApp {
 
@@ -7,7 +6,7 @@ public class MainApp {
 		
 		// Create all database connections
 		// Create main UI instance
-		Player mainPlayer = new Player();
+		Player mainPlayer = new Player("Username");
 		Controller manager = new Controller(mainPlayer);
 		View viewer = new View(manager);
 		
@@ -15,17 +14,17 @@ public class MainApp {
 		viewer.showStats();
 		
 		Skill skill = mainPlayer.getStrengthSkill();
-		int xp = 20000;
+		int xp = 200000;
 		manager.trainingMode(skill, xp);
 		
 		viewer.showStats();
 	}
 	
-	public static void saveData() {
+	public static void saveData() throws FileNotFoundException {
 		
 	}
 	
-	public static void getData() {
+	public static void getData() throws FileNotFoundException {
 		
 	}
 

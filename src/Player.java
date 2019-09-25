@@ -3,8 +3,10 @@ public class Player implements IFightable {
 	
 	private Skill strength, hp;
 	private int combatLevel;
+	private String username;
 	
-	public Player() {
+	public Player(String name) {
+		this.username = name;
 		this.strength = new Strength();
 		this.hp = new Hitpoints();
 		this.combatLevel = 1;
@@ -15,6 +17,10 @@ public class Player implements IFightable {
 		if(!(cb < 1)) {
 			this.combatLevel = cb;
 		}
+	}
+	
+	public String getUsername() {
+		return this.username;
 	}
 	
 	public int getCombatLevel() {
