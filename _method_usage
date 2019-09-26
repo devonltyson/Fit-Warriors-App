@@ -8,6 +8,7 @@ void battleMode(Player other): Enter battle mode. Implemented later
 void createPlayer(String name): Creates a new player
 void getData(): get user info data from database
 void saveData(): store user info data onto database
+boolean doesDatabaseExist(): return true if database exists
 
 Player: 
 void calculateCombatLevel(): Set combat level for player
