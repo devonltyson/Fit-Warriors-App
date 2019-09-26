@@ -27,7 +27,6 @@ public class View {
 		String name = scan.nextLine();
 		
 		System.out.println();
-		System.out.println("New player, " + name + ", created.");
 		
 		return name;
 	}
@@ -46,7 +45,6 @@ public class View {
 		case 1:
 			String name = getNewUsername();
 			Controller.createPlayer(name);
-			Controller.getData();
 		
 		case 2:
 			Controller.getData();
