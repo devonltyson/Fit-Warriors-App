@@ -1,12 +1,13 @@
 MainApp: 
-void main(): run the app, set up the player
-void getData(): get user data from database //// not implemented yet ////
-void saveData(): store user data onto database //// not implemented yet ////
+void main(): run the app
 
 Controller: 
 HashMap<String, Integer> playerStats(): returns a HashMap of player’s stats
 void trainingMode(Skill skill, int addedXp): Enter training mode. All player skills can gain XP here
 void battleMode(Player other): Enter battle mode. Implemented later
+void createPlayer(String name): Creates a new player
+void getData(): get user info data from database
+void saveData(): store user info data onto database
 
 Player: 
 void calculateCombatLevel(): Set combat level for player
@@ -26,3 +27,5 @@ void train(int addedXp): add this amount of xp to total xp for this skill
 
 View: //// Will be replaced by GUI ////
 void viewStats(): temporary way to view players statistics
+String getNewUsername(): get a username for a new player
+void beginningPrompt(): have user select 'Existing User' or 'New User' option
