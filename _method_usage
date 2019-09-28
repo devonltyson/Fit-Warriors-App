@@ -29,6 +29,6 @@ void train(int addedXp): add this amount of xp to total xp for this skill
 View: //// Will be replaced by GUI ////
 void viewStats(): temporary way to view players statistics
 String getNewUsername(): get a username for a new player
-void beginningPrompt(): have user select 'Existing User' or 'New User' option
+void beginningPrompt(): recognizes existing user or if one doesn't exist, prompts user to create an account
 void mainScreen(): choose to view stats, train or exit
 void trainingScreen(): choose which stat to train and enter xp amount
