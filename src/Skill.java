@@ -44,7 +44,7 @@ public abstract class Skill implements ITrainable, Serializable {
 	
 	private void levelUp() {
 		
-		if(this.level <= MAX_LEVEL) {
+		if(this.level < MAX_LEVEL) {
 			this.level++;
 			calculateGoalXp();
 		}
