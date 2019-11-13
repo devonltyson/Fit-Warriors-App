@@ -1,6 +1,8 @@
 # Fit Warriors
 ![Fit Warriors Logo](https://cdn1.imggmi.com/uploads/2019/9/16/5a06c81970fb6e951a290ce9ba9742af-full.png)
 
+NOTE: The full version of the app is currently under development in a team repository 
+
 ## Table of contents
 * [General info](#general-info)
 * [Technologies used](#technologies)
