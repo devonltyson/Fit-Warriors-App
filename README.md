@@ -12,8 +12,6 @@ NOTE: The full version of the app is currently under development in a team repos
 ## General info
 The Fit Warriors application tracks your workouts and records the data as statistics for a virtual character. Select the skill you'd like to train and your character will gain experience as you workout. When you've gotten the required experience, you will gain a level in the specified skill. The higher the skill level, the more experience it takes to level which progressively increases the difficulty.
 
-Developers: Devon Tyson, Dakota Ruhl, Kenneth Omo, Jose Herrera, and Victor Hernandez
-
 ## Technologies used
 Andriod Studio <br>
 
